@@ -4,6 +4,8 @@
 # The N-queens problem is: Given an empty NxN chessboard, place N queens on the board so that no queen
 # can attack any other, i.e. such that no two queens share the same row, column or diagonal.
 
+#!/usr/bin/env python3
+
 
 import sys
 
@@ -55,9 +57,12 @@ N = int(sys.argv[1])
 
 # The board is stored as a list-of-lists. Each inner list contains row and column of a queen on the board.
 # An empty list indicates no piece, and elements in the list indicates pieces on the board.
-initial_board = [[0 for i in range(N)] for j in range(N)]
+initial_board = [[0 for x in range(N)] for y in range(N)]
 
 # Indexes
 occupied_cols = [False for i in range(N)]
 occupied_diag1 = [False for i in range(2 * N - 1)]
 occupied_diag2 = [False for i in range(2 * N - 1)]
+
+# Driver function
+solveNQueens();
