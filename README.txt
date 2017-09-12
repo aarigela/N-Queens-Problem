@@ -1,10 +1,19 @@
-nrooks.py -> Questions 1,2,3
-The code in this file uses the given abstraction and state representation.
-The function successors() and successors2() are used with is_goal().
-The function successors3() is used with is_goal2().
+nQueens.py : Solve the N-Queens problem
 
-nrooks2.py -> Question 4,5
-The code in this file uses a new abstraction and state representation.
-See PDF for detailed description about new abstraction.
-The function successors3() is used here.
-The function successors() and successors2() are not used in this new abstraction.
+The N-queens problem is: 
+
+  Given an empty NxN chessboard, place N queens on the board so that no queen can attack any other, i.e. such that no two queens share the same row, column or diagonal.
+
+Sample output :-
+
+[<username> ~]$ py nQueens.py 8
+_ _ _ _ Q _ _ _
+_ _ _ _ _ _ Q _
+_ Q _ _ _ _ _ _
+_ _ _ _ _ Q _ _
+_ _ Q _ _ _ _ _
+Q _ _ _ _ _ _ _
+_ _ _ Q _ _ _ _
+_ _ _ _ _ _ _ Q
+
+Here, Q's indicate the positions of queens on the board.
